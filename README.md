@@ -42,4 +42,4 @@ docker-compose up --build
     "email": "customer@example.com"
 }
 ```
-2. Verificando o Envio de Email: O consumidor na API de Envios de Email processará a mensagem e simulará o envio de um email de confirmação, que será exibido no terminal.
+3. Verificando o Envio de Email: O consumidor na API de Envios de Email processará a mensagem e simulará o envio de um email de confirmação, que será exibido no terminal.
