@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  payment_api:
+    build: ./payment_api
+    depends_on:
+      - rabbitmq
+    ports:
+      - "5000:5000"
+
+  email_api:
+    build: ./email_api
+    depends_on:
+      - rabbitmq
